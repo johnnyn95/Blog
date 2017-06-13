@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Posts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <link href="css/bootstrap-journal.css" rel="stylesheet">
+        <link href="css/posts.css" rel="stylesheet">
+
+
+        
+    </head>
+    <body>
+
+        <nav id="navbar" class="navbar  navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="logo-text" class="navbar-brand" href="#">#YDDOS</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="hamburger">
+                <ul class="nav navbar-nav">
+                    <li class="active "><a href="#">Posts <span class="sr-only"></span></a></li>
+                    <li><a href="#">About <span class="sr-only"></span></a></li>
+                    <li><a href="#">Archive  <span class="sr-only"></span></a></li>
+                    <li><a href="#">Contact <span class="sr-only"></span></a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <!--user info-->
+                <div class="col-md-3 col-sm-3 col-xs-3 profile ">
+                    <aside>
+                        <img id="user-photo" class="img-circle img-responsive" src="imgs/user1.jpg" alt="user-photo">
+                        <h5 id="user-name"class="medium ">Doggor Macblogger<h5>
+                        <p id="user-title">Professional doggo</p>
+                        <hr>
+                        <a id="user-twitter" class="twitter-follow-button"
+                        href="https://twitter.com/TwitterDev"
+                        data-show-count="true"
+                        data-size="large">
+                        Follow @TwitterDev
+                        </a>
+                    </aside>
+                </div>
+
+                <!--blog info-->
+                <div class="col-md-8 col-sm-8 col-xs-8  ">
+                    <article>
+                        <header id="post-header" ><h2>Ipsum dolor sit amet, consectetur adipiscing elit</h2></header>
+                        <div id="post-content" class="lead" >
+                            Sed commodo nec libero vitae mollis. Maecenas viverra vulputate nunc, eget venenatis purus iaculis maximus. Donec imperdiet massa mi, ut pharetra risus convallis non. Pellentesque nulla lacus, convallis vel semper nec, imperdiet vitae dolor. Duis sit amet nunc nunc. Aliquam congue nunc nec sapien congue. <a id="readmore" href="#">Read more</a>
+                        </div>
+                        <footer id="tags">
+                            <span class="label label-default">doggo</span>
+                            <span class="label label-default">goodboy</span>
+                            <span class="label label-default">wow</span>
+                        </footer>
+                        <footer id="post-footer">Posted on 13.06.2017</footer>
+                    </article>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+    }(document, "script", "twitter-wjs"));</script>
+    </body>
+</html>

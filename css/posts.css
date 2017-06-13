@@ -1,0 +1,25 @@
+.container{
+    max-width: 80%;
+}
+.box{
+    border: 1px dotted red;
+}
+.profile{
+    margin-right: 5%;
+}
+.profile aside p{
+    font-size: 12px;
+}
+.profile aside ul li {
+    float: left;
+    margin-right: 8px;
+}
+.profile aside ul{
+    list-style: none;
+    padding: 0px;
+}
+.profile aside ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
